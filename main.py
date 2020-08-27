@@ -12,7 +12,7 @@ nltk.download('averaged_perceptron_tagger')
 
 app = Flask(__name__)
 
-@app.route('/login',methods = ['POST', 'GET'])
+@app.route('/login',methods = ['POST'])
 def login():
     user = request.form['nm']
     a=str(user)
